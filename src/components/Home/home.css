@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Common Styling */
+
+.head {
+    margin: 15px 0px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', 'Poppins';
+}
+
+
+/* header Styling */
+
+header {
+    width: 100%;
+    height: 110vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 110vh;
+    width: 100%;
+}
+
+#navigation {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav-brand {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: auto 10px;
+    /* margin: auto 0px auto 0px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.nav-brand i {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 31px;
+}
+
+.nav-brand p {
+    margin: auto;
+    color: white;
+}
+
+.nav-brand span {
+    color: brown;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    padding: 10px 20px;
+    overflow: visible;
+    transition: all .5s ease;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid brown;
+    text-decoration: none;
+    color: brown;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+#nav-check {
+    display: none;
+}
+
+.heading {
+    width: 42%;
+    color: white;
+    position: relative;
+    left: 10%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.home-center {
+    color: white;
+    text-align: left;
+    margin-top: 60px;
+}
+
+.heading>.home-center>span {
+    color: brown;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    left: 12%;
+}
+
+.home-center h2 {
+    position: relative;
+    left: 10%;
+    width: 85%;
+    color: white;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 4.2rem;
+    padding: 3px;
+}
+
+.heading>.home-center>h2>span {
+    color: brown;
+    text-align: left;
+}
+
+.home-center p {
+    text-align: justify;
+    width: 85%;
+    font-size: 19px;
+    position: relative;
+    left: 10%;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button .btn1 {
+    cursor: pointer;
+    width: 125px;
+    height: 60px;
+    font-size: 17px;
+    box-shadow: 3px 3px 3px brown;
+    transition: all .5s ease-in-out;
+}
+
+.button .btn1:hover {
+    width: 130px;
+    height: 65px;
+    color: white;
+    font-size: 19px;
+    text-decoration: underline white;
+    background-color: brown;
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+
+/* About Me */
+
+#about {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 10px grey;
+}
+
+.about-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info {
+    width: 34%;
+}
+
+.info h2 {
+    /* font-size: 2.2rem;
+    
+    color: #000a2d;
+    font-weight: 600;
+    margin-bottom: 30px; */
+    margin-bottom: 23px;
+    color: brown;
+    font-size: 19px;
+    font-weight: 600;
+    /*position: relative; */
+    /* left: 12%; */
+}
+
+.info p {
+    font-family: "Rubik", sans-serif;
+    color: #10285d;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.info #resume-download {
+    margin: 25px 5px;
+    cursor: pointer;
+    width: 190px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: rgb(184, 60, 60);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.info #resume-download:hover {
+    background-color: whitesmoke;
+    color: brown;
+}
+
+
+.image {
+    width: 27%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px grey;
+}
+
+.below-profile {
+    margin: auto;
+    padding: 10px;
+}
+.below-profile i {
+    color: brown;
+}
+
+.below-profile strong {
+    color: brown;
+    padding-left: 10px;
+}
+
+/* My Education */
+
+#education {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 10px grey;
+}
+
+.card-container {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    justify-content: space-evenly;
+    /* border: 2px solid brown; */
+}
+
+.card {
+    height: 40vh;
+    width: 25%;
+    /* border: 2px solid black; */
+    /* box-sizing: border-box 2px solid red; */
+    box-shadow: 0 -3px 9px brown;;
+}
+
+.card-head {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+    margin: auto;
+}
+
+.card-head i {
+    font-size: 40px;
+    color: brown;
+    margin: auto;
+    padding: 6px;
+}
+
+.card-head h3 {
+    font-weight: 600;
+}
+
+.edu-info {
+    margin: 10px;
+    padding: 0px 5px 0px 5px;
+    font-size: 17px;
+    color: brown;
+}
+
+/* My Skills */
+
+#skills {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 10px grey;
+}
+
+.skills-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.experience {
+    width: 32%;
+    height: 80%px;
+}
+
+.experience h3 {
+    color: #000a2d;
+    font-family: "Rufina", serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience p {
+    font-family: "Rubik", sans-serif;
+    color: #10285d;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.experience p a {
+    text-decoration: none;
+}
+
+.graph {
+    width: 35%;
+    position: relative;
+    /* left: 30%; */
+}
+
+.graph .skill {
+    margin-bottom: 15px;
+}
+
+.graph .skill .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.graph .skill .line {
+    height: 5px;
+    width: 95%;
+    background-color: lightgray;
+    position: relative;
+}
+
+.graph .skill .line::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: brown;
+}
+
+.graph .skill .dsa::before {
+    width: 85%;
+}
+
+.graph .skill .html::before {
+    width: 90%;
+}
+
+.graph .skill .css::before {
+    width: 90%;
+}
+
+.graph .skill .python::before {
+    width: 80%;
+}
+
+.graph .skill .java::before {
+    width: 75%;
+}
+
+.graph .skill .MONGODB::before {
+    width: 75%;
+}
+
+.graph .skill .js::before {
+    width: 70%;
+}
+
+
+/* Contact Me Styling */
+
+#contact {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 10px grey;
+}
+
+.contact-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-container .left {
+    width: 35%;
+    height: 70%;
+}
+/* 
+#contact .left h2 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    padding: 5px;
+    margin-bottom: 10px;
+} */
+/* 
+#contact .left p {
+    font-family: "Rubik", sans-serif;
+    color: #10285d;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    padding: 5px;
+} */
+
+.left .line {
+    margin-top: 20px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.line .line-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-content: baseline; */
+}
+
+.line .icon i {
+    font-size: 18px;
+    color: brown;
+    margin-right: 4px;
+    margin: 5px;
+}
+.btn:hover{
+    background-color: brown;
+    color: aliceblue;
+    box-shadow: 0px 3px 8px brown;
+    transition: all 0.5s ease-in-out;
+}
+
+.left .line .icon .inp {
+    padding: 15px;
+}
+
+#contact .right {
+    width: 40%;
+    height: 70%;
+}
+
+#contact .right h2 {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#contact .right .input1 input {
+    width: 220px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#contact .right input {
+    transition: all .5s ease-in-out;
+    border: none;
+}
+
+#contact .right .input input {
+    font-size: 18px;
+    width: 467px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#contact .right .input #message {
+    text-align: left;
+    padding-top: 0px;
+    height: 120px;
+}
+
+#contact .right button {
+    cursor: pointer;
+    width: 190px;
+    height: 50px;
+    color: whitesmoke;
+    background-color: rgb(184, 60, 60);
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#contact .right button:hover {
+    background-color: whitesmoke;
+    color: brown;
+}
+
+
+/* My Projects */
+
+#project {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 8px 10px grey;
+}
+
+
+/* Footer*/
+
+footer {
+    width: 85%;
+    height: 10vh;
+    margin: auto;
+    color: whitesmoke;
+    background-color: #000a2d;
+    box-shadow: 0px 8px 10px #000a2d;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer span {
+    color: brown;
+}
+
+footer h4 {
+    margin: auto;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+
+/* Responsive CSS */
+
+@media (max-width:1088px) {
+    .heading {
+        left: 6%;
+    }
+    .home-center h2 {
+        width: 85%;
+        color: white;
+        margin-top: 15px;
+        font-size: 3.2rem;
+    }
+    .home-center p {
+        font-size: 18px;
+        margin-top: 5px;
+        padding: 6px;
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+    .button a {
+        padding: 5px;
+        margin: 8px 5px;
+    }
+    .button .btn {
+        width: 105px;
+        height: 50px;
+        font-size: 16px;
+        box-shadow: 2px 2px 2px brown;
+        transition: all .5s ease-in-out;
+    }
+    .button .btn:hover {
+        width: 130px;
+        height: 65px;
+        font-size: 18px;
+        box-shadow: 1px 1px 1px #aaaaaa;
+    }
+    /* About Section */
+    #about {
+        width: 95%;
+    }
+    .info {
+        width: 34%;
+    }
+    .info h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    .info #resume-download {
+        height: 50px;
+        font-size: 15px;
+        width: 125px;
+        padding: 8px;
+        border-radius: 8px;
+    }
+    .image {
+        width: 31%;
+        height: 82%;
+        margin: 30px 0px;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    /* My Skills Section */
+    #skills {
+        width: 95%;
+    }
+    .skills-container {
+        margin: 15px 0px;
+        flex-direction: column;
+    }
+    .experience {
+        width: 80%;
+    }
+    .experience h3 {
+        font-size: 21px;
+        margin-bottom: 15px;
+        border-left: 2px solid brown;
+        padding-left: 8px;
+        border-radius: 5px;
+    }
+    .experience p {
+        font-size: 15px;
+    }
+    .graph {
+        width: 75%;
+    }
+    /* Contact Section */
+    #contact {
+        width: 95%;
+        padding-top: 10px;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-container .left {
+        width: 80%;
+    }
+    .left-info {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .left .line {
+        margin-top: 2px;
+    }
+    .line .icon i {
+        font-size: 17px;
+    }
+    #contact .right {
+        width: 80%;
+    }
+    #contact .right .input1 input {
+        width: 45%;
+        font-size: 17px;
+    }
+    #contact .right .input input {
+        font-size: 17px;
+        width: 85%;
+    }
+    #contact .right .input #message {
+        height: 120px;
+    }
+    #contact .right button {
+        width: 40%;
+        font-size: 17px;
+    }
+    /* Footer Section */
+    footer {
+        width: 95%;
+    }
+    footer h4 {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        position: relative;
+        /* font-size: 23px; */
+        margin: auto;
+    }
+}
+
+@media (max-width:825px) {
+    /* Nav-Bar */
+    .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav-btn>label {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 9px;
+        position: relative;
+        top: 12px;
+        right: 10px;
+        border-top: 3px solid rgb(255, 255, 255);
+    }
+    .menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 40%;
+        background-color: rgb(9, 8, 8);
+        height: 0px;
+        transition: all 0.4s ease-in;
+        overflow-y: hidden;
+        top: 80px;
+        right: 0px;
+    }
+    #nav-check:not(:checked)~.menu {
+        height: 0px;
+    }
+    #nav-check:checked~.menu {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    /* Home Section */
+    .heading {
+        width: 80%;
+        top: 20%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .button {
+        flex-direction: column;
+    }
+    /* About Section */
+    #about {
+        width: 100%;
+    }
+    .image {
+        width: 31%;
+        height: 60%;
+        margin: 20px 0px;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}

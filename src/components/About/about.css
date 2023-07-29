@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Common Styling */
+
+.head {
+    margin: 15px 0px;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', 'Poppins';
+}
+
+
+/* header Styling */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #000a2d;
+}
+
+#navigation {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav-brand {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-brand i {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 31px;
+}
+
+.nav-brand p {
+    color: white;
+}
+
+.nav-brand span {
+    color: brown;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu a {
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    padding: 10px 20px;
+    overflow: visible;
+    transition: all .5s ease;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid brown;
+    text-decoration: none;
+    color: brown;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+#nav-check {
+    display: none;
+}
+
+/* About Me */
+
+#about {
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 10px grey;
+}
+
+.about-container {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info {
+    width: 34%;
+}
+
+.info h2 {
+    font-size: 2.2rem;
+    display: block;
+    color: #000a2d;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-family: "Rubik", sans-serif;
+    color: #10285d;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.info #resume-download {
+    margin: 25px 0px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 150px;
+    padding: 12px;
+    border-radius: 10px;
+    color: black;
+    border: 3px solid brown;
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.4s ease-out;
+}
+
+.image {
+    width: 32%;
+    height: 85%;
+    margin: 30px 0px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px grey;
+}
