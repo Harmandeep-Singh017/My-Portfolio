@@ -31,9 +31,9 @@ const home = () => {
 			</div>
 			<div className="menu">
 			  <a href="#home">Home</a>
-			  <a href="#about">About Me</a>
-			  <a href="#skills1">Skills</a>
-			  <a href="#contact1">Contacts</a>
+			  <a href="#about1">About Me</a>
+			  <a href="#skills">Skills</a>
+			  <a href="#contact">Contacts</a>
 			  <a href="#rate">Review</a>
 			</div>
 
@@ -64,14 +64,14 @@ const home = () => {
 			  <a href="#about1">
 				<button className="btn1">Learn More</button>
 			  </a>
-			  <a href="#contact1">
+			  <a href="#contact">
 				<button className="btn1">Hire Me</button>
 			  </a>
 			</div>
 		  </div>
 		</header>
 
-		<section id="about">
+		<section id="about1">
 		  <div className="head">
 			<h1>About Me</h1>
 		  </div>
@@ -80,7 +80,7 @@ const home = () => {
 			  <h2 className="small-heading">I Create Products Not Just Art.</h2>
 			  <p>
 				As a computer engineering student, my objective is to gain
-				hands-on experience in the industry, learn new programming
+				hands-on experience in the industry, learning new programming
 				languages and technologies, and contribute to meaningful
 				projects. I aim to leverage my skills and knowledge to deliver
 				high-quality code, collaborate effectively with my team members,
